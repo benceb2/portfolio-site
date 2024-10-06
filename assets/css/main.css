@@ -1,0 +1,200 @@
+/* General styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #007acc;
+  /* Header background color */
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+}
+
+h1 {
+  font-size: 2.5em;
+  /* Larger font for the main title */
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2em;
+  /* Slightly larger subheadings */
+  margin: 20px 0 10px;
+}
+
+h3 {
+  font-size: 1.5em;
+  /* Sub-subheading for project titles */
+  margin: 15px 0 5px;
+  color: #005a99;
+  /* Darker shade for contrast */
+}
+
+.contact-icons {
+  margin-top: 10px;
+}
+
+.contact-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5em;
+  /* Icon size */
+  transition: color 0.3s;
+  /* Smooth transition */
+}
+
+.contact-icons a:hover {
+  color: #e0e0e0;
+  /* Change color on hover */
+}
+
+section {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  background: white;
+  /* White background for sections */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #007acc;
+  color: white;
+  position: relative;
+  bottom: 0;
+  /* Keep footer at the bottom */
+  margin-top: 20px;
+  /* Space between content and footer */
+}
+
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  /* Underline on hover for better UX */
+}
+
+ul {
+  list-style-type: disc;
+  /* Bullet points for lists */
+  margin-left: 20px;
+  /* Indentation for list items */
+}
+
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Center align images */
+  margin-bottom: 20px;
+  /* Space below the images */
+}
+
+.project-images img {
+  width: 350px;
+  /* Set width for images */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin: 10px;
+  /* Space between images */
+  border-radius: 5px;
+  /* Optional: rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Optional: subtle shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+    /* Adjust header size on smaller screens */
+  }
+
+  h2 {
+    font-size: 1.5em;
+    /* Adjust subheading size on smaller screens */
+  }
+
+  h3 {
+    font-size: 1.2em;
+    /* Adjust project title size on smaller screens */
+  }
+
+  /* Modal overlay */
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1000;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Black w/ opacity */
+  }
+
+  /* Modal content */
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    /* Max width of the image */
+    max-height: 80%;
+    /* Max height of the image */
+  }
+
+  /* Close button */
+  .close-modal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #caption {
+    color: #ccc;
+    text-align: center;
+    margin-top: 10px;
+  }
+}

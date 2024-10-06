@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bence Barkanyi - Portfolio">
+  <title>Bence Barkanyi - Portfolio</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <h1>Bence Barkanyi</h1>
+    <p>Full Stack Software Developer</p>
+    <div class="contact-icons">
+      <a href="mailto:contact@bence.im" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/bence-b-b787751a2/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/benceb2" title="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+  </header>
+
+  <section>
+    <h2><i class="fas fa-user fa-xs"></i> About Me</h2>
+    <p>
+      I am a passionate full-stack developer with over a year of hands-on experience in the dynamic world of software
+      development, having previously attained a Computer Science degree from Cardiff University. My expertise lies in
+      the JavaScript/TypeScript ecosystem and native Android development using Kotlin
+      and Java. I am dedicated to continuously learning and adapting to new technologies and methodologies, driven by a
+      strong desire to solve complex problems and contribute to innovative projects.
+    </p>
+  </section>
+
+  <section>
+    <h2><i class="fas fa-briefcase fa-xs"></i> Experience</h2>
+    <h3>Full Stack Developer, CabCard Services</h3>
+    <p><strong>JUN 2023 - PRESENT</strong></p>
+    <ul>
+      <li>Currently managing the development and upkeep of two Android applications (built with React Native and Kotlin)
+        on the Play Store, ensuring regular updates and feature enhancements for over 1.5k active users.</li>
+      <li>Successfully migrated our React Native Android app to an SDK-based SoftPOS solution, collaborating with
+        external vendors to integrate their SDK, which now supports over 100,000 transactions annually.</li>
+      <li>Conduct regular code reviews, promoting high standards of code quality and best practices within the team.
+      </li>
+    </ul>
+
+    <h3>Senior Administrator, Canada Life International</h3>
+    <p><strong>OCT 2019 - SEP 2020, MAY 2021 - JUN 2023</strong></p>
+    <ul>
+      <li>Processed applications and provided expert responses to complex adviser queries, consistently achieving
+        quality scores exceeding 95%.</li>
+      <li>Trained new team members and assessed procedures to ensure they met business requirements effectively.</li>
+    </ul>
+  </section>
+
+  <div class="modal" style="display:none;">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modal-image" />
+    <div id="caption"></div>
+  </div>
+
+  <section>
+    <h2><i class="fas fa-code fa-xs"></i> Projects</h2>
+    <h3>Cypher Trading - Trading Bot Dashboard</h3>
+    <p><strong>JUL 2023 - FEB 2024</strong></p>
+    <div class="project-images">
+      <img src="assets/images/cypher/dashboard.png" alt="Cypher Trading Dashboard" class="project-image open-modal" />
+      <img src="assets/images/cypher/trades-list.png" alt="Cypher Trading Trades List" />
+      <img src="assets/images/cypher/pricing-table.png" alt="Cypher Trading Pricing Table" />
+      <img src="assets/images/cypher/settings.png" alt="Cypher Trading Settings" />
+    </div>
+    <ul>
+      <li>Developed a trading bot dashboard utilising Vue.js and Node.js, integrating Stripe API for user subscription
+        management.</li>
+      <li>Displayed real-time performance metrics by connecting with the trading bot API, enhancing user experience.
+      </li>
+      <li>Implemented a serverless architecture using Firebase Cloud Functions for efficient backend processes.</li>
+    </ul>
+
+    <h3>DashBudget - Expense Tracker Android App</h3>
+    <p><strong>JAN 2023 - MAY 2023</strong></p>
+    <ul>
+      <li>Created an expense tracker app as part of my university final project, featuring biometric login for enhanced
+        security.</li>
+      <li>Utilised Firebase Authentication and Firestore Database to manage user data, offering a cloud-based solution
+        for expense tracking.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><i class="fas fa-graduation-cap fa-xs"></i> Education</h2>
+    <h3>BSc Computer Science, Cardiff University</h3>
+    <p><strong>SEP 2020 - JUN 2023</strong> (Graduated with 2:1)</p>
+
+    <h3>A-Levels, Ballakermeen High School</h3>
+    <p><strong>SEP 2017 – JUL 2019</strong></p>
+    <ul>
+      <li>Economics (B)</li>
+      <li>Mathematics (B)</li>
+      <li>Physics (C)</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Bence Barkanyi</p>
+  </footer>
+
+  <script src="assets/js/modal.js"></script>
+</body>
+
+</html>
