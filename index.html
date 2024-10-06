@@ -8,6 +8,7 @@
   <title>Bence Barkanyi - Portfolio</title>
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
 </head>
 
 <body>
@@ -66,9 +67,11 @@
     <p><strong>JUL 2023 - FEB 2024</strong></p>
     <div class="project-images">
       <img src="assets/images/cypher/dashboard.png" alt="Cypher Trading Dashboard" class="project-image open-modal" />
-      <img src="assets/images/cypher/trades-list.png" alt="Cypher Trading Trades List" />
-      <img src="assets/images/cypher/pricing-table.png" alt="Cypher Trading Pricing Table" />
-      <img src="assets/images/cypher/settings.png" alt="Cypher Trading Settings" />
+      <img src="assets/images/cypher/trades-list.png" alt="Cypher Trading Trades List"
+        class="project-image open-modal" />
+      <img src="assets/images/cypher/pricing-table.png" alt="Cypher Trading Pricing Table"
+        class="project-image open-modal" />
+      <img src="assets/images/cypher/settings.png" alt="Cypher Trading Settings" class="project-image open-modal" />
     </div>
     <ul>
       <li>Developed a trading bot dashboard utilising Vue.js and Node.js, integrating Stripe API for user subscription
@@ -106,7 +109,24 @@
     <p>&copy; 2024 Bence Barkanyi</p>
   </footer>
 
-  <script src="assets/js/modal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script>
+    // Listen for clicks on elements with the class 'open-modal'
+    document.querySelectorAll('.open-modal').forEach(image => {
+      image.addEventListener('click', function (event) {
+        const imageUrl = this.src; // Get the source of the clicked image
+
+        // Display the SweetAlert modal with the image
+        Swal.fire({
+          imageUrl: imageUrl, // Set the image in the modal
+          imageAlt: event.target.alt, // Set the alt text of the image
+          showCloseButton: true, // Show a close button
+          showConfirmButton: false, // Hide the confirm button
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>

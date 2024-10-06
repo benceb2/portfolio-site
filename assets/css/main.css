@@ -13,6 +13,7 @@ body {
   padding: 20px;
 }
 
+
 header {
   text-align: center;
   padding: 50px 0;
@@ -126,6 +127,34 @@ ul {
   /* Optional: subtle shadow */
 }
 
+.open-modal {
+  cursor: pointer;
+  /* Change cursor to pointer for clickable images */
+  transition: transform 0.2s;
+  /* Optional: Add a transition for a nice effect */
+}
+
+.open-modal:hover {
+  transform: scale(1.05);
+  /* Optional: Slightly scale the image on hover */
+}
+
+.swal2-modal {
+  width: auto;
+  /* Set to auto for natural sizing */
+  max-width: 80%;
+  /* Maximum width */
+  padding: 0;
+  /* Remove default padding */
+}
+
+.swal2-image {
+  width: 70%;
+  /* Ensure the image takes full width of the modal */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   body {
@@ -149,52 +178,5 @@ ul {
   h3 {
     font-size: 1.2em;
     /* Adjust project title size on smaller screens */
-  }
-
-  /* Modal overlay */
-  .modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1000;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.8);
-    /* Black w/ opacity */
-  }
-
-  /* Modal content */
-  .modal-content {
-    margin: auto;
-    display: block;
-    max-width: 80%;
-    /* Max width of the image */
-    max-height: 80%;
-    /* Max height of the image */
-  }
-
-  /* Close button */
-  .close-modal {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-
-  #caption {
-    color: #ccc;
-    text-align: center;
-    margin-top: 10px;
   }
 }
