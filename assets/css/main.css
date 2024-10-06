@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
   background-color: #f9f9f9;
   color: #333;
@@ -23,6 +23,39 @@ header {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   /* Subtle shadow for depth */
+}
+
+header nav {
+  margin: 20px 0;
+}
+
+.nav-links {
+  list-style-type: none;
+  /* Remove default list styling */
+  padding: 0;
+  /* Remove default padding */
+}
+
+.nav-links li {
+  display: inline;
+  /* Display links inline */
+  margin: 0 15px;
+  /* Space between links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: white;
+  /* Link color */
+  transition: color 0.3s;
+  /* Smooth color transition */
+}
+
+.nav-links a:hover {
+  color: #e0e0e0;
+  user-select: none;
+  /* Change color on hover */
 }
 
 h1 {
