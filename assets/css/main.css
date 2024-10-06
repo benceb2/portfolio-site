@@ -46,7 +46,7 @@ header nav {
 }
 
 .nav-links a {
-  text-decoration: none;
+
   /* Remove underline from links */
   color: white;
   /* Link color */
@@ -55,9 +55,8 @@ header nav {
 }
 
 .nav-links a:hover {
-  color: #e0e0e0;
-  user-select: none;
-  /* Change color on hover */
+  color: #bbbbbb;
+  text-decoration: none;
 }
 
 h1 {
